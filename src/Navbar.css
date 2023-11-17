@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    right:136px;
+    width: 200px;
+}
+
+.option{
+    display: flex;
+    position: relative;
+    left: 20px;
+}
+
+select{
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-right: 10%;
+}

@@ -1,0 +1,43 @@
+.section-ph{
+    position: relative;
+
+}
+
+
+.bottom-menu{
+    position: absolute;
+    bottom: 0px;
+    left:130px;
+    background-color: black;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 350px;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.bottom-start{
+    display: flex;
+}
+
+.ph-img{
+    height:80px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.loader{
+    height: 60px;
+}
+.pht{
+    font-size: 15px;
+}
+.phc{
+    font-size: 15px;
+    color: blue;
+}

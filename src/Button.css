@@ -1,0 +1,29 @@
+button{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+button:hover{
+    background-color: #c11119;
+}
+
+.btn-small{
+    height: 35px;
+    width: 90px;
+}
+
+.btn-large{
+    height: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 25px;
+}
