@@ -2,10 +2,18 @@ footer{
     padding-left: 11% !important;
     padding-right: 15%;
     padding-top: 4%;
-    padding-left: 4%;
+    padding-bottom: 4%;
     color: #b3b3b3;
 }
 
+table{
+    width: 100%;
+}
+
+th{
+    padding-bottom: 20px;
+}
+
 td{
-    padding-bottom: 20px !important;
+    padding-bottom: 10px !important;
 }
