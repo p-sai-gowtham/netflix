@@ -23,5 +23,9 @@ header {
 }
 
 .inner-text{
-    font-weight: 100;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
 }

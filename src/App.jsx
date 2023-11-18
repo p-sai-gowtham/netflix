@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import FaqData from './demo-data';
 import Header from './Header.jsx';
 import Section from './Section.jsx';
 import SectionReversed from './Section_reversed.jsx';
 import SectionPh from './Section_ph.jsx';
+import Email from './Email.jsx';
 import Faq from './Faq.jsx';
 import Footer from './Footer.jsx';
 import TvP from '/device-pile-in.png';
@@ -14,6 +16,23 @@ import phImg from '/boxshot.png';
 import './App.css';
 
 function App() {
+
+  const [faqs, setFaqs] = useState([...FaqData]);
+
+  const toggleFAQ = index => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
+
 
   return (
     <>
@@ -27,7 +46,19 @@ function App() {
       
       <SectionReversed title='Create profiles for kids' content='Send children on adventures with their favourite characters in a space made just for them—free with your membership.' eimg={kids} />
 
-      {/* <Faq/> */}
+      <h2 className="title" style={{textAlign: 'center', marginTop:'10px'}}>
+        Frequently Asked Questions
+      </h2>
+
+      <div className="faq-external">
+        <div className="faqs">
+          {faqs.map((faq, index) => (
+            <Faq faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+          ))}
+        </div>
+      <Email />
+      </div>
+
 
       {/* <Footer/> */}
 

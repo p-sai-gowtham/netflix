@@ -13,9 +13,7 @@ export default function Header() {
                 <h2 className='inner-text'>
                     Watch anywhere. Cancel anytime.
                 </h2>
-                <h2 className='inner-text'>
-                    Ready to watch? Enter your email to create or restart your membership.
-                </h2>
+                
                 <Email />
             </div>
         </header>

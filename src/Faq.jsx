@@ -1,15 +1,11 @@
 import './Faq.css';
 
-export default function Faq() {
-    return (
-        <section className='faqs'>
-            <h2 className="title">
-                Frequently Asked Questions
-            </h2>
-            <div className='faq'>
-                What is Netflix?
-            </div>
-        </section>
-    );
+export default function Faq({ faq, index, toggleFAQ }) {
 
+    return (
+        <div className={"faq " + (faq.open ? "open" : "")} key={index} onClick={() => toggleFAQ(index)}>
+            <div className="faq-question">{faq.question}</div>
+            <div className="faq-answer">{faq.answer}</div>
+        </div>
+    );
 }
