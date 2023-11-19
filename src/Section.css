@@ -1,8 +1,8 @@
 section{
     display: flex;
-    justify-content: space-around;
-    padding-left: 170px;
-    padding-right: 170px;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 70px;
     padding-bottom: 70px;
     border-bottom: 8px solid #232323;
@@ -10,8 +10,8 @@ section{
 
 section .title{
     font-size: 50px;
-
 }
+
 
 .section-content{
     width: 550px;
@@ -34,11 +34,30 @@ section .title{
     top: 0;
     left: 0;
     z-index: 1;
-    width:610px;
+    width:80%;
 }
 
 .section-img video{
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 10%;
+}
+
+.vbt{
+    width:45%;
+    top:10% !important;    
+    left: 20% !important;
+}
+
+.vt{
+    width: 60%;
+    height: 100%;
+}
+
+
+@media (max-width: 1280px) {
+    section{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }

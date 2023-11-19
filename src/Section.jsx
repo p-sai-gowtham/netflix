@@ -12,13 +12,13 @@ export default function Section({ title, content, eimg, iimg , isTv}) {
                 </h3>
             </div>
             <div className="section-img">
-                <img src={eimg} alt="external img" />
+                <img src={eimg} className='eimg' alt="external img" />
                 {!isTv ? (
-                    <video autoPlay muted width="380" height="290">
+                    <video autoPlay muted className='vbt' >
                         <source src={iimg} />
                     </video>
                 ) : (
-                    <video autoPlay muted width="480" height="290" style={{ top: '65px', left:'55px'}}>
+                    <video autoPlay muted className='vt' width="480" height="290" >
                         <source src={iimg} />
                     </video>
                 )}
