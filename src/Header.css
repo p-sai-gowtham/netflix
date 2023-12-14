@@ -7,25 +7,42 @@ header {
     flex-direction: column;
 }
 
-.header-content{
+.header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 9%;
+    padding-right: 9%;
+    flex: 1 0 auto;
     padding-top: 80px;
 }
 
 
-.title{
+.title {
     font-size: 60px;
     margin-bottom: 0px;
 }
 
-.inner-text{
+.inner-text {
     font-weight: 600;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+@media (max-width: 1105px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .inner-text {
+        font-size: 20px;
+    }
 }

@@ -8,7 +8,7 @@ export default function SectionPh({ title, content, eimg, phTitle, phContent, ph
                 <div className='bottom-menu'>
                     <div className='bottom-start'>
                         <img className='ph-img' src={phImg} alt="stranger things" />
-                        <div>
+                        <div className='p-content'>
                             <h3 className='pht'>{phTitle}</h3>
                             <h3 className='phc'>{phContent}</h3>
                         </div>

@@ -1,26 +1,36 @@
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.logo{
+.logo {
     position: relative;
-    right:136px;
+    right: 136px;
     width: 200px;
 }
 
-.option{
+.option {
     display: flex;
     position: relative;
-    left: 20px;
+    left: 95px;
 }
 
-select{
+select {
     width: 120px;
     height: 40px;
     padding: 5px;
     background-color: black;
     color: white;
     margin-right: 10%;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        right: 56px;
+    }
+
+    .option {
+        left: 35px;
+    }
 }

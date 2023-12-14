@@ -17,3 +17,10 @@ th{
 td{
     padding-bottom: 10px !important;
 }
+
+@media (max-width: 900px) {
+    
+    footer{
+        font-size: 15px;
+    }
+}
